@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    font-family: Roboto;
+    list-style-type: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    margin: 200px 15% 200px 15%;
+}
+
+#section {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#footer {
+    position: fixed;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    font-weight: bold;
+    width: 100%;
+    bottom: 0;
+    font-size: 1.5rem;
+}
+
+#header {
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    box-shadow: 3px 1.4px 5px 4px #ccc;
+    transition: all .45s ease;
+    width: 100%;
+}
+
+.header-h2 {
+    padding-left: 2rem;
+}
+
+.navlist {
+    display: flex;
+}
+
+.navlist a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    padding: 0 1rem 0 1rem;
+    transition: all .45s ease;
+    text-decoration: none;
+}
+
+.navlist a:hover {
+    color: orange;
+}
+
+@media (max-width: 544px) {
+    #header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .navlist {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
